@@ -146,7 +146,7 @@ const Project = () => {
         })
 
 
-        axios.get(`/projects/get-project/${location.state.project._id}`).then(res => {
+        axios.get(`api/projects/get-projects/${location.state.project._id}`).then(res => {
 
             console.log(res.data.project)
 
