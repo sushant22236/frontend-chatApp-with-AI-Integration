@@ -113,12 +113,12 @@ const Project = () => {
 
         initializeSocket(project._id)
 
-        if (!webContainer) {
-            getWebContainer().then(container => {
-                setWebContainer(container)
-                console.log("container started")
-            })
-        }
+        // if (!webContainer) {
+        //     getWebContainer().then(container => {
+        //         setWebContainer(container)
+        //         console.log("container started")
+        //     })
+        // }
 
 
         receiveMessage('project-message', data => {
